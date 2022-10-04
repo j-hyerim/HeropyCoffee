@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+main{
+    padding-top: 120px;
+}
+.badges{
+    width: 130px;
+    position: fixed;
+    right: 5px; top: 125px;
+    z-index: 90;
+}
+.badges img{
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0,.3);
+}
+/* visual */
+/* 비주얼영역서식 */
+.visual{
+    height:646px;
+    background:url('../images/visual_bg.jpg');
+  }
+  .visual > h2{display:none;}
+  .visual .inner{
+    width:1100px;height:646px;
+    margin:0px auto;
+    /* background:#ff0; */
+    position: relative;
+  }
+  .title,.cup1,.cup1_txt,.cup2,.cup2_txt,.spoon{
+    position: absolute;
+  }
+  .title{
+    top: 40px;
+    left: -10px;
+  }
+  .cup1{
+    bottom: 0px;
+    right: -47px;
+  }
+  .cup1_txt{
+    top: 40px;
+    right: 60px;
+  }
+  .cup2{
+    bottom: 0px;
+    right: 162px;
+  }
+  .cup2_txt{
+    top: 186px;
+    right: 412px;
+  }
+  .spoon{
+    bottom: 0px;
+    left: 275px;
+  }
+  
+  .detail_btn{
+    width: 130px;
+    padding: 10px;
+    border: 4px;
+    border: 2px solid #592b18;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    transform: translate(130px);
+    transition: 0.4s;
+    color: #592b18;
+  }
+  .detail_btn:hover{
+    color: #fff;
+    background-color: #592b18;
+  }
+  
+  .fadeIn{
+    opacity: 0;
+  }

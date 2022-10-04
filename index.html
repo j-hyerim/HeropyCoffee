@@ -27,6 +27,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
     <script src="./script/prefixfree.min.js"></script>
+    <script defer src="./script/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
 </head>
 <body>
     <header id="header">
@@ -284,18 +286,45 @@
         </div>
     </header>
     <main>
-        <article class="siled"></article>
-        <article class="news"></article>
-        <article class="box1"></article>
-        <article class="box2"></article>
-        <article class="box3"></article>
-        <article class="box4"></article>
-        <article class="box5"></article>
-        <article class="box6"></article>
-        <!-- <section>
-            <article></article>
-            <article></article>
-        </section> -->
+        <section class="visual">
+            <h2>메인 비주얼 이미지</h2>
+            <div class="inner">
+              <div class="title fadeIn">
+                <img src="./images/visual_title.png" alt="">
+                <a href="#" title="자세히보기" class="detail_btn">자세히 보기</a>
+              </div>
+      
+              <div class="fadeIn">
+                <img src="./images/visual_cup1.png" alt="" class="cup1">
+                <img src="./images/visual_cup1_text.png" alt="" class="cup1_txt">
+              </div>
+      
+              <div class="fadeIn">
+                <img src="./images/visual_cup2.png" alt="" class="cup2">
+                <img src="./images/visual_cup2_text.png" alt="" class="cup2_txt">
+              </div>
+      
+              <div class="fadeIn">
+                <img src="./images/visual_spoon.png" alt="" class="spoon">
+              </div>
+            </div>
+          </section>
+        <section class="news"></section>
+        <section class="box1"></section>
+        <section class="box2"></section>
+        <section class="box3"></section>
+        <section class="box4"></section>
+        <section class="box5"></section>
+        <section class="box6"></section>
+        <aside class="badges">
+            <a href="#" title="ㄷㅣ저트 50%할인">
+                <img src="./images/badge1.jpg" alt="">
+            </a>
+            <br>    
+            <a href="#" title="골드회원가입">
+                <img src="./images/badge2.jpg" alt="">
+            </a>
+        </aside>
     </main>
     <footer></footer>
 </body>
