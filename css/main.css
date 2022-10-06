@@ -54,7 +54,7 @@ main{
   }
   
   .detail_btn{
-    width: 130px;
+    width: 110px;
     padding: 10px;
     border: 4px;
     border: 2px solid #592b18;
@@ -65,6 +65,7 @@ main{
     transform: translate(130px);
     transition: 0.4s;
     color: #592b18;
+    border-radius: 5px;
   }
   .detail_btn:hover{
     color: #fff;
@@ -152,13 +153,18 @@ main{
   position: relative;
   overflow: hidden;
   position: relative;
+  height: 663px;
+  transition: 0.4s;
+}
+.hide{/*버튼 클릭 시 프로모션 박스에 적용할 서식*/
+  height: 0px; 
 }
 .promotion h2{display: none;}
 .proSlide{
   widtH: calc(819px * 3 + 10px * 2); /*2477*/ /*띄어쓰기 주의*/
-  height: 663px;
   flex-shrink: 0;
   position: relative;
+  height: 663px;
 }
 .proSlide .swiper-slide{
   text-align: center;
@@ -172,7 +178,7 @@ main{
   position: absolute;
   bottom: 120px; left: 0px; right: 0;
   margin: 0px auto;
-  width: 130px;
+  width: 110px;
   padding: 10px;
   border: 2px solid #333;
   font-size: 16px;
@@ -180,7 +186,8 @@ main{
   display: block;
   transition: 0.4s;
   color: #333;
-  border-radius: 3px;
+  border-radius: 5px;
+
 }
 .proSlide .swiper-slide .btn:hover{
   color: #fff;
@@ -225,3 +232,285 @@ main{
   color: #fff;
 }
 .swiper-button-prev::after, .swiper-button-next::after{display: none;}
+/* rewos *//* REWORDS */
+.rewords{
+  position: relative;
+}
+.bg-left{
+  width: 13%;
+  height: 100%;
+  background-color: #272727;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 5;
+}
+.bg-right{
+  width: 13%;
+  height: 100%;
+  background-color: #d5c798;
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 5;
+}
+.rewords .inner{
+  background-image: url(../images/rewards.jpg);
+  height: 241px;
+  width: 1100px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 10;
+}
+  .rewords .btn-group{
+  position: absolute;
+  right: 25px;
+  bottom: 24px;
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.rewords .btn-group .btn.sign-up{
+  width: 40%;
+  margin-right: 10px;
+  color: #fff;
+  background: #333;
+}
+.rewords .btn-group .btn.sign-up:hover{
+  color: #333;
+  background: none;
+}
+.rewords .btn-group .sign-in{
+  width: 36%;
+}
+.rewords .btn-group .btn.gift{
+  width: 100%;
+  margin-top: 10px;
+  flex-grow: 1;
+}
+.rewords .btn{
+  width: 110px;
+  padding: 10px;
+  border: 4px;
+  border: 2px solid #333;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  transition: 0.4s;
+  color: #333;
+    border-radius: 5px;
+}
+.rewords .btn:hover{
+  color: #fff;
+  background-color: #333;
+}
+/* 영상콘텐츠 */
+
+.movie{
+  width: 100%;
+  height: 700px;
+  background-color: #333;
+  position: relative;
+}
+.movie .m_inner{
+  width: 1100px;
+    height: 700px;
+  margin: 0px auto;
+  /* border: 3px solid #ff0; */
+  position: relative;
+  z-index: 12;
+}
+.movie .m_inner img{
+  position: absolute;
+}
+.m_img1{
+  left: -60px;top:30px;
+  animation: img1 5s infinite;
+}
+.m_img2{
+  left: 100px;top: 320px;
+  animation: img2 4s infinite;
+}
+.m_img3{
+  right: 0px;bottom: -60px;
+  animation: img3 3s infinite;
+}
+
+@keyframes img1{
+0%{top:20px;}
+50%{top:0px;}
+100%{bottom:20px;}
+}
+@keyframes img2{
+0%{left: 100px;top: 340px;}
+50%{left: 100px;top: 320px;}
+100%{left: 100px;top: 340px;}
+}
+@keyframes img3{
+0%{right: 0px;bottom: -80px;}
+50%{right: 0px;bottom: -60px;}
+100%{right: 0px;bottom: -80px;}
+}
+
+.youtube{
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  top: 0px; left: 0px;
+  z-index:10;
+}
+.youtube video{
+  width: 100%; height: 100%;
+  left: 0px;
+}
+.cover{
+  position: absolute; top: 0px; left: 0px; width: 100%; height:100%; 
+  background-image: url(../images/video_cover_pattern.png);
+  z-index: 11;
+}
+
+/* ice coffee */
+.season-product{
+  background: url(../images/season_product_bg.jpg);
+  height: 400px;
+}
+.season-product > h2{
+  display: none;
+}
+.season-product .inner{
+  width: 1100px;
+  margin: 0px auto;
+  position: relative;
+}
+.season-product .coffee01{
+  position: absolute;
+}
+.season-product .text_group{
+  position: absolute;
+  top: 110px;
+  right: 100px;
+  width: 480px;
+}
+.season-product .c_title{
+  padding-top: 60px;
+}
+.season-product .description{
+  padding-top: 15px;
+}
+.season-product .btn{
+  width: 110px;
+  padding: 10px;
+  border: 4px;
+  border: 2px solid #333;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  transition: 0.4s;
+  color: #333;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.season-product .btn:hover{
+  color: #fff;
+  background-color: #333;
+}
+/* 리저브 */
+.reserve-coffee{
+  background-image: url("../images/reserve_bg.jpg");
+}
+.reserve-coffee .inner{
+  width: 1100px ;
+  height: 400px;
+  position: relative;
+}
+#reserve-log{
+  position: relative;
+  top:100px;
+  left: 200px;
+}
+.reserve-coffee .text-group{
+  position: absolute;
+  top:127px;
+  left: 380px;
+}
+.reserve-coffee .product{
+  position: absolute;
+  top: -110px;
+  left: 430px;
+}
+.reserve-coffee .btn{
+  width: 110px;
+  padding: 10px;
+  border: 4px;
+  border: 2px solid #9f7d65;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  transition: 0.4s;
+  color:  #9f7d65;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.reserve-coffee .btn:hover{
+  color: #fff;
+  background-color:  #9f7d65;
+}
+/* PICK YOUR FAVORITE */
+.pick-your-favorite{
+  height: 700px;
+  background-image: url("../images/favorite_bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.pick-your-favorite .inner{
+  width: 370px;
+  height: 490px;
+  /* padding: 110px 0; */
+}
+.pick-your-favorite .text-group{
+  width: 362px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  position: relative;
+}
+.pick-your-favorite .text-group .title{
+  position: absolute;
+  padding-top: 0px;
+  top: 110px;
+  left: 280px;
+}
+.pick-your-favorite .text-group .description{
+  position: absolute;
+  padding-top: 40px;
+  top: 300px;
+  left: 170px;
+}
+
+.pick-your-favorite .btn{
+  width: 110px;
+  padding: 10px;
+  border: 4px;
+  border: 2px solid #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  transition: 0.4s;
+  color:  #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: absolute;
+    top: 510px;
+    left: 390px;
+}
+.pick-your-favorite .btn:hover{
+  color: #333;
+  background-color:  #fff;
+}
