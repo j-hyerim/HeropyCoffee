@@ -52,7 +52,9 @@ main{
     bottom: 0px;
     left: 275px;
   }
-  
+  .n{
+    display: none;
+  }
   .detail_btn{
     width: 110px;
     padding: 10px;
