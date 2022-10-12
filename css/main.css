@@ -2,6 +2,7 @@
 
 main{
     padding-top: 120px;
+    overflow-x:hidden;
 }
 .badges{
     width: 130px;
@@ -239,7 +240,7 @@ main{
   position: relative;
 }
 .bg-left{
-  width: 13%;
+  width: 50%;
   height: 100%;
   background-color: #272727;
   position: absolute;
@@ -248,7 +249,7 @@ main{
   z-index: 5;
 }
 .bg-right{
-  width: 13%;
+  width: 50%;
   height: 100%;
   background-color: #d5c798;
   position: absolute;
@@ -363,7 +364,7 @@ main{
   z-index:10;
 }
 .youtube video{
-  width: 100%; height: 100%;
+  width: 1900px; height: 100%;
   left: 0px;
 }
 .cover{
@@ -426,21 +427,22 @@ main{
   width: 1100px ;
   height: 400px;
   position: relative;
+  margin: 0px auto;
 }
 #reserve-log{
   position: relative;
-  top:100px;
-  left: 200px;
+  top:110px;
+  left: 5px;
 }
 .reserve-coffee .text-group{
   position: absolute;
   top:127px;
-  left: 380px;
+  left: 210px;
 }
 .reserve-coffee .product{
   position: absolute;
-  top: -250px;
-  left: 450px;
+  top: -270px;
+  left: 440px;
 }
 .reserve-coffee .btn{
   width: 110px;
@@ -470,8 +472,9 @@ main{
   background-size: cover;
 }
 .pick-your-favorite .inner{
-  width: 370px;
+  width: 1100px;
   height: 490px;
+  margin: 0px auto;
   /* padding: 110px 0; */
 }
 .pick-your-favorite .text-group{
@@ -486,13 +489,13 @@ main{
   position: absolute;
   padding-top: 0px;
   top: 110px;
-  left: 280px;
+  left: 105px;
 }
 .pick-your-favorite .text-group .description{
   position: absolute;
-  padding-top: 40px;
+  padding-top: 50px;
   top: 300px;
-  left: 170px;
+  /* left: 55px; */
 }
 
 .pick-your-favorite .btn{
@@ -509,8 +512,8 @@ main{
     border-radius: 5px;
     margin-top: 20px;
     position: absolute;
-    top: 510px;
-    left: 30px;
+    top: 540px;
+    right: 0px;
 }
 .pick-your-favorite .btn:hover{
   color: #333;

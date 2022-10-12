@@ -260,7 +260,12 @@ footer img{
     padding: 40px 0px;
     margin: 0px 150px 0px 0px;
     border-bottom: 0.1px solid rgb(57, 57, 57);
+    margin: 0px auto;
 }
+  /* .f_swiper .swiper-button-next{display: none;} */
+  /* .f_swiper .swiper-button-prev{display: none;} */
+  
+  
 footer .f_for,footer .f_back{
     color : rgb(105, 105, 105);
     padding: 10px;
@@ -272,13 +277,13 @@ footer .f_for,footer .f_back{
 }
 footer .f_for:hover,footer .f_back:hover{
     color :#333;
-background-color: rgb(105, 105, 105);
+    background-color: rgb(105, 105, 105);
 }
 footer .f_for{
-    right: 50px;
+    right: 0px;
 }
 footer .f_back{
-    left: 50px;
+    left: 0px;
 }
 .swiper-slide img{
     margin:0px
